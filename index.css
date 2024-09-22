@@ -1,0 +1,74 @@
+/* Custom Styles */
+.hero-bg {
+    background:  url('./images/background.webp') center/cover no-repeat !important;
+}
+
+/* Hero Section Background */
+.hero-bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    position: relative;
+}
+
+/* Text Shadow for Hero Section */
+.hero-bg h1, .hero-bg p {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Navbar - Mobile Menu (optional if you want to add functionality later) */
+.navbar-toggler {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navbar-toggler {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbar-menu {
+        display: none;
+    }
+
+    .navbar-menu.active {
+        display: block;
+    }
+}
+
+/* Auction Cards - Adjust image heights to match */
+.auction-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Auction Cards Hover Effect */
+.auction-card:hover {
+    transform: translateY(-10px);
+    transition: 0.3s ease-in-out;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #1a202c;
+}
+
+footer p {
+    color: #a0aec0;
+}
+
+/* Custom Button Style */
+.btn-primary {
+    background-color: #1a73e8;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #1761c1;
+}
